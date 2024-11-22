@@ -1,0 +1,76 @@
+/* Loginpage.css for filling the desktop screen */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #f9f9f9;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .heading {
+    grid-column: span 2;
+    text-align: left;
+    position: relative;
+    top: 100px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-email,
+  .input-password {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-button {
+    margin-right: 5px;
+  }
+  
+  .submit-button {
+    grid-column: span 2;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 500px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1024px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
